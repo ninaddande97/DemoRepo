@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Library</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            
+            width: 100%;
+            height: auto;
+            padding: 20px 0;
+        }
+
+        /* Navbar styles */
+        nav {
+            background-color: rgb(215, 32, 25);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+        }
+
+        .logo {
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 5px;
+            /* font-weight: bold; */
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 10px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 20px;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            background-color: gold;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .search-bar button:hover {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav>
+            <a href="#" class="logo">E-Library</a>
+            <div class="navbar-links">
+                <a href="#" onclick="homepage()">Homepage</a>
+                <a href="http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/03.book%20categories%20css.html">Book Categories</a>
+                <a href="http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/04.contact%20us%20css.html">Contact Us</a>
+                <a href="http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/05.About%20us%20css.html">About Us</a>
+                <a href="http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/06.sign%20up%20css.html">Sign Up</a>
+                <a href="http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/07.login%20css.html">Log In</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button>Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <div class="main-header">
+        <div class="header">
+            <h5>E-Library</h5>
+            <h2>For All your Reading Needs</h2>
+            <p>Fellow e-reader enthusiasts, rejoice! Our digital libraries hold a universe of stories waiting to be
+                explored, all accessible with just a tap or a click. No more heavy bags overflowing with books.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <img src="elib3.jpg" alt="">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Footer content -->
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function homepage() {
+            window.location.href = "https://google.com";
+        }
+    </script>
+</body>
+
+</html>

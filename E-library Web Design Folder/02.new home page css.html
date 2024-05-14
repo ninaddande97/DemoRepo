@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+            
+    
+
+        header {
+            background-color: rgb(215, 32, 25);
+            width: 100%;
+            height: auto;
+            padding: 20px 0;
+        }
+
+        /* Navbar styles */
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* height: 70px; */
+            padding: 17px;
+            
+        }
+
+        .contain a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+
+        }
+        .contain a:hover {
+            background-color: gold;
+            color: black;
+            font-size: 18px;
+            margin: 0px 10px;
+            border: none;
+            border-radius: 18px;
+            padding: 10px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .search-bar input {
+            padding: 10px;
+            margin: 0px 10px;
+            border: none;
+            border-radius: 20px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+
+        .search-bar button {
+            padding: 10px;
+            margin: 0px 10px;
+            border: none;
+            border-radius: 20px;
+
+        }
+        .logo {
+            font-size: 40px;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+
+        .logo:hover::first-line {
+            color: black;
+
+        }
+        .search-bar button:hover {
+            background-color: gold;
+            color: black;
+            font-size: 15px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+
+
+        h1{
+            
+            color: rgb(161, 26, 26);
+            text-align: center;
+            padding: 20px 0;
+        }
+        .slider {
+            overflow-x: auto;
+            /* Enable horizontal scrolling if needed */
+            white-space: nowrap;
+            /* Prevent line breaks */
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .slider img {
+            width: 280px;
+            height: 300px;
+            margin: 0 10px;
+            border-radius: 20px;
+            cursor: pointer;
+
+        }
+
+        .search-container {
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 10px;
+            border: black;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 60%;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+
+    <script>
+        function redirectToBook(bookName) {
+            alert("Please login to read the book!");
+            // Implement redirection logic to the detailed page of the respective book
+            window.location.href = "book_details_page.html?book=" + encodeURIComponent(bookName);
+
+            // Add login page link
+            var loginPageLink = "http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/07.login%20css.html"; 
+            window.location.href = loginPageLink;
+        }
+
+        function searchBooks() {
+            var searchInput = document.getElementById("searchInput").value.toLowerCase();
+            var books = document.querySelectorAll(".slider img");
+
+            books.forEach(function (book) {
+                var altText = book.alt.toLowerCase();
+                var parent = book.parentElement;
+
+                if (altText.includes(searchInput)) {
+                    parent.style.display = "block";
+                } else {
+                    parent.style.display = "none";
+                }
+            });
+        }
+
+    </script>
+
+</head>
+
+<body>
+    
+        <header>
+            <nav>
+                <div class="logo">INKWELL</div>
+                <div class="contain">
+                    <a href="" onclick="homepage()">Homepage</a>
+                    <a href="http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/03.book%20categories%20css.html">Book
+                        Categories</a>
+                    <a href="http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/04.contact%20us%20css.html">Contact Us</a></li>
+                    <a href="http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/05.About%20us%20css.html">About Us</a>
+                    <a href="http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/06.sign%20up%20css.html">Sign Up</a>
+                    <a href="http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/07.login%20css.html">Log In</a>
+    
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <button>Search</button>
+                </div>
+            </nav>
+        </header>
+
+    <h1>Welcome to the E-Library</h1>
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search by Book Category or Name">
+        <button onclick="searchBooks()">Search</button>
+    </div>
+    <!-- Slider -->
+    <div class="slider-container">
+        <div class="slider">
+            <img src="wallpaperflare.com_wallpaper (1).jpg" alt="Book 1" onclick="redirectToBook('book1')">
+            <img src="wallpaperflare.com_wallpaper (2).jpg" alt="Book 2" onclick="redirectToBook('book2')">
+            <img src="wallpaperflare.com_wallpaper (3).jpg" alt="Book 3" onclick="redirectToBook('book3')">
+            <img src="wallpaperflare.com_wallpaper (1).jpg" alt="Book 4" onclick="redirectToBook('book4')">
+            <img src="wallpaperflare.com_wallpaper (2).jpg" alt="Book 5" onclick="redirectToBook('book5')">
+
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

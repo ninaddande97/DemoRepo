@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comedy Category</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Combo&family=Kalnia&family=Qwitcher+Grypen:wght@700&display=swap');
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light gray background */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px; /* Increase spacing between heading and content */
+            font-family: 'Arial Black', sans-serif; /* Use a bold font */
+            font-size: 36px; /* Increase font size */
+            color: #4e54c8; /* Start color of gradient */
+            background: linear-gradient(to right, #8f94fb, #4e54c8); /* Gradient background */
+            font-family: Kalnia;
+            -webkit-text-fill-color: whitesmoke; /* Hide original text color */
+        }
+
+        .category {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .book {
+            /* Adjust as needed for spacing */
+            width: calc(20% - 20px);
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease; /* Add smooth transition on hover */
+        }
+
+        .book:hover {
+            transform: translateY(-5px); /* Add slight lift effect on hover */
+        }
+
+        .book img {
+            width: 100%;
+            height: 200px;
+            border-radius: 8px;
+        }
+
+        .book h2 {
+            font-size: 20px;
+            margin-top: 10px;
+            color: #333; /* Dark gray heading */
+        }
+
+        .book p {
+            font-size: 16px;
+            color: #666; /* Medium gray text */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Motivational-Books</h1>
+        <div class="category">
+            <div class="book">
+                <img src="Gemini_moti1.jpg" alt="Comedy Book 1">
+                <h2>Conquer Your Mountain</h2>
+                <h4>By:  Maximus Strong</h4>
+                <p>Push your limits, embrace challenges, and reach new heights.</p>
+            </div>
+            <div class="book">
+                <img src="Gemini_moti2.jpg" alt="Comedy Book 2">
+                <h2>Growth Mindset</h2>
+                <h4>By:  Dr. Amelia Bloom</h4>
+                <p>Embrace the power of learning, cultivate resilience, and blossom into your full potential.</p>
+            </div>
+            <div class="book">
+                <img src="Gemini_moti3.jpg" alt="Comedy Book 3">
+                <h2>Create Your Masterpiece </h2>
+                <h4>By:  Vincent Bright</h4>
+                <p>Unlock your creativity, unleash your passion, and paint your own masterpiece of life.</p>
+            </div>
+            <div class="book">
+                <img src="Gemini_moti4.jpg" alt="Comedy Book 4">
+                <h2>The Power of Teamwork</h2>
+                <h4>By:  Synergy Smith</h4>
+                <p>Together we achieve more. Build strong connections and collaborate for success.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

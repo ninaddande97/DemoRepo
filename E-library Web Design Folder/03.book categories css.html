@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Categories</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: beige;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .category {
+            margin: 20px;
+            text-align: center;
+            cursor: pointer;
+            /* transition: transform 0.3s ease; */
+        }
+
+        .category img {
+            width: 250px;
+            height: 300px;
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+
+        .category h2 {
+            font-size: 24px;
+        }
+    </style>
+    <script>
+        // direct link to horror page
+        function navigateToCategory(category) {
+            window.location.href = `http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/03.book%20${category}.html`;
+        }
+        // direct link to horror comedy
+        function navigateToCategory(category) {
+            window.location.href = `http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/03.book%20${category}.html`;
+        }   
+        //direct link to horror stories
+        function navigateToCategory(category) {
+            window.location.href = `http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/03.book%20${category}.html`;
+        }
+        //direct link to horror motivational
+        function navigateToCategory(category) {
+            window.location.href = `http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/03.book%20${category}.html`;
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Book Categories</h1>
+    </header>
+
+    <div class="container">
+        <div class="category" onclick="navigateToCategory('horror')">
+            <img src="horror.jpg" alt="Horror Books">
+            <h2>Horror</h2>
+        </div>
+        <div class="category" onclick="navigateToCategory('comedy')">
+            <img src="comedy4.jpg" alt="Comedy Books">
+            <h2>Comedy</h2>
+        </div>
+        <div class="category" onclick="navigateToCategory('stories')">
+            <img src="Stories.jpg" alt="Stories Books">
+            <h2>Stories</h2>
+        </div>
+        <div class="category" onclick="navigateToCategory('motivational')">
+            <img src="Gemini_moti4.jpg" alt="Motivational Books">
+            <h2>Motivational</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
