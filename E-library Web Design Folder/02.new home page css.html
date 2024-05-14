@@ -8,15 +8,14 @@
     <link rel="stylesheet" href="styles.css">
 
     <style>
-       
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            
+
         }
-            
-    
+
+
 
         header {
             background-color: rgb(215, 32, 25);
@@ -26,13 +25,13 @@
         }
 
         /* Navbar styles */
-        nav{
+        nav {
             display: flex;
             align-items: center;
             justify-content: space-between;
             /* height: 70px; */
             padding: 17px;
-            
+
         }
 
         .contain a {
@@ -42,6 +41,7 @@
             font-size: 18px;
 
         }
+
         .contain a:hover {
             background-color: gold;
             color: black;
@@ -74,6 +74,7 @@
             border-radius: 20px;
 
         }
+
         .logo {
             font-size: 40px;
             color: white;
@@ -86,6 +87,7 @@
             color: black;
 
         }
+
         .search-bar button:hover {
             background-color: gold;
             color: black;
@@ -94,12 +96,13 @@
         }
 
 
-        h1{
-            
+        h1 {
+
             color: rgb(161, 26, 26);
             text-align: center;
             padding: 20px 0;
         }
+
         .slider {
             overflow-x: auto;
             /* Enable horizontal scrolling if needed */
@@ -154,7 +157,7 @@
             window.location.href = "book_details_page.html?book=" + encodeURIComponent(bookName);
 
             // Add login page link
-            var loginPageLink = "http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/07.login%20css.html"; 
+            var loginPageLink = "http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/07.login%20css.html";
             window.location.href = loginPageLink;
         }
 
@@ -179,26 +182,26 @@
 </head>
 
 <body>
-    
-        <header>
-            <nav>
-                <div class="logo">INKWELL</div>
-                <div class="contain">
-                    <a href="" onclick="homepage()">Homepage</a>
-                    <a href="http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/03.book%20categories%20css.html">Book
-                        Categories</a>
-                    <a href="http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/04.contact%20us%20css.html">Contact Us</a></li>
-                    <a href="http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/05.About%20us%20css.html">About Us</a>
-                    <a href="http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/06.sign%20up%20css.html">Sign Up</a>
-                    <a href="http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/07.login%20css.html">Log In</a>
-    
-                </div>
-                <div class="search-bar">
-                    <input type="text" placeholder="Search">
-                    <button>Search</button>
-                </div>
-            </nav>
-        </header>
+
+    <header>
+        <nav>
+            <div class="logo">INKWELL</div>
+            <div class="contain">
+                <a href="" onclick="homepage()">Homepage</a>
+                <a href="http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/03.book%20categories%20css.html">Book
+                    Categories</a>
+                <a href="http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/04.contact%20us%20css.html">Contact Us</a></li>
+                <a href="http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/05.About%20us%20css.html">About Us</a>
+                <a href="http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/06.sign%20up%20css.html">Sign Up</a>
+                <a href="http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/07.login%20css.html">Log In</a>
+
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button>Search</button>
+            </div>
+        </nav>
+    </header>
 
     <h1>Welcome to the E-Library</h1>
     <!-- Search Bar -->

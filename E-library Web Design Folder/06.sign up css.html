@@ -16,8 +16,86 @@
         }
 
         header {
-            background-color: #333;
+            background-color: rgb(215, 32, 25);
+            width: 100%;
+            height: auto;
+            padding: 20px 0;
+        }
+
+        /* Navbar styles */
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* height: 70px; */
+            padding: 17px;
+
+        }
+
+        .contain a {
+            margin: 0 20px;
+            text-decoration: none;
             color: white;
+            font-size: 18px;
+
+        }
+
+        .contain a:hover {
+            background-color: gold;
+            color: black;
+            font-size: 18px;
+            margin: 0px 10px;
+            border: none;
+            border-radius: 18px;
+            padding: 10px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .search-bar input {
+            padding: 10px;
+            margin: 0px 10px;
+            border: none;
+            border-radius: 20px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+
+        .search-bar button {
+            padding: 10px;
+            margin: 0px 10px;
+            border: none;
+            border-radius: 20px;
+
+        }
+
+        .logo {
+            font-size: 40px;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+
+        .logo:hover::first-line {
+            color: black;
+
+        }
+
+        .search-bar button:hover {
+            background-color: gold;
+            color: black;
+            font-size: 15px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+
+        h1 {
+
+            color: rgb(161, 26, 26);
             text-align: center;
             padding: 20px 0;
         }
@@ -89,8 +167,27 @@
 
 <body>
     <header>
-        <h1>Sign Up</h1>
+        <nav>
+            <div class="logo">INKWELL</div>
+            <div class="contain">
+                <a href="" onclick="homepage()">Homepage</a>
+                <a href="http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/03.book%20categories%20css.html">Book
+                    Categories</a>
+                <a href="http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/04.contact%20us%20css.html">Contact Us</a></li>
+                <a href="http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/05.About%20us%20css.html">About Us</a>
+                <a href="http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/06.sign%20up%20css.html">Sign Up</a>
+                <a href="http://127.0.0.1:5500/SETTRIBE%20CODE/E-library/07.login%20css.html">Log In</a>
+
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button>Search</button>
+            </div>
+        </nav>
     </header>
+
+    <h1>Sign Up</h1>
+
 
     <div class="container">
         <form id="signup-form" action="#" method="POST">
